@@ -2,7 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import LoginPage from "@pages/Login";
 import { authLoader, protectedLoader } from "@utils/ProtectedRoutes";
 import { Layout } from "@pages/Layout";
-import DashboardPage from "@pages/Dashboard";
+import { DashboardPage } from "@pages/Dashboard";
 
 // Importar otras páginas según sea necesario
 /* 
