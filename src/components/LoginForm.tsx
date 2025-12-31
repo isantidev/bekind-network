@@ -137,7 +137,6 @@ export function LoginForm() {
                     </span>
                 )}
             </div>
-
             <div className={"formInput"}>
                 <label htmlFor="input-password">Contraseña</label>
                 <div>
@@ -166,7 +165,10 @@ export function LoginForm() {
                     </span>
                 )}
             </div>
-
+            {/* Enlace para restablecer la contraseña */}
+            <a href="" className="restorePass">
+                Restablecer Contraseña
+            </a>
             <button
                 type="submit"
                 style={{
@@ -179,7 +181,6 @@ export function LoginForm() {
             >
                 {formik.isSubmitting ? "Ingresando..." : "Ingresar"}
             </button>
-
             {submitError && (
                 <small className="errorMessage">
                     <AlertCircle />
