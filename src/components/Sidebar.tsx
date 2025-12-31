@@ -1,15 +1,15 @@
-import { NavLink, redirect } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { menuItems } from "@utils/menuItems";
 import { useAuth } from "@context/Login";
 import "@styles/sidebar.css";
 import { LogOut } from "lucide-react";
 
 export default function Sidebar() {
+    const navigate = useNavigate();
     const handleLogout = () => {
         const { logout } = useAuth.getState();
         logout();
-
-        redirect("/login");
+        navigate("/login");
     };
 
     return (

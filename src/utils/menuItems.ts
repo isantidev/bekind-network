@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export const menuItems = [
-    { path: "/dashboard", label: "Home", icon: Home },
+    { path: "/home", label: "Home", icon: Home },
     { path: "/impacto-social", label: "Impacto Social", icon: Heart },
     { path: "/comunidad", label: "Comunidad", icon: Users },
     { path: "/sponsors", label: "Sponsors", icon: DollarSign },

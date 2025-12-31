@@ -98,7 +98,7 @@ export function LoginForm() {
             if (result.success) {
                 // Manejo de inicio de sesión exitoso, token guardado.
                 auth.login({ username: values.username }, result.token!);
-                redirect("/dashboard");
+                redirect("/bakanes");
             } else {
                 setSubmitError(result.message || "Inicio de sesión fallido.");
             }
