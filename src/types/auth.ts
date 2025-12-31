@@ -1,6 +1,5 @@
 interface UserData {
-    email: string;
-    userName: string;
+    username: string;
 }
 
 export interface AuthState {
