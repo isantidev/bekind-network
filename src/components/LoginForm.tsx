@@ -92,6 +92,7 @@ export function LoginForm() {
         onSubmit: async (values, { setSubmitting }) => {
             setSubmitError("");
 
+            await new Promise((r) => setTimeout(r, 2000)); // Simula retardo de red
             const result = await loginUser(values);
 
             if (result.success) {
